@@ -1,0 +1,104 @@
+\doxysection{Application Class Reference}
+\hypertarget{class_application}{}\label{class_application}\index{Application@{Application}}
+
+
+{\ttfamily \#include $<$Application.\+hpp$>$}
+
+
+
+Collaboration diagram for Application\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_application__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}{Application}} ()
+\item 
+\mbox{\hyperlink{class_application_a748bca84fefb9c12661cfaa2f623748d}{\texorpdfstring{$\sim$}{\string~}\+Application}} ()
+\item 
+void \mbox{\hyperlink{class_application_ad46cc41d95fe3e730e35f65138d834f2}{Start\+Up}} ()
+\item 
+void \mbox{\hyperlink{class_application_a817892cf56c1c333d53be31e73e8c2f8}{Shutdown}} ()
+\item 
+void \mbox{\hyperlink{class_application_a72747c744fd95cb6f96350bf58b326a6}{Input}} ()
+\item 
+void \mbox{\hyperlink{class_application_a72f9820ca25c093f6c2c4b2812f6a2a4}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_application_a6f40ffdb97f3a938ae19ea4eae4882ed}{Render}} ()
+\item 
+void \mbox{\hyperlink{class_application_add8435e8cede1ab06a59cdc220ea394c}{Loop}} (float target\+FPS)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the \doxylink{class_application}{Application} Logic Behind the Engine. (i.\+e. looping through Input, Update, and Render on the \doxylink{class_scene}{Scene} and UI). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}\label{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8} 
+\index{Application@{Application}!Application@{Application}}
+\index{Application@{Application}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{Application()}{Application()}}
+{\footnotesize\ttfamily Application\+::\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor for this \doxylink{class_application}{Application}. \Hypertarget{class_application_a748bca84fefb9c12661cfaa2f623748d}\label{class_application_a748bca84fefb9c12661cfaa2f623748d} 
+\index{Application@{Application}!````~Application@{\texorpdfstring{$\sim$}{\string~}Application}}
+\index{````~Application@{\texorpdfstring{$\sim$}{\string~}Application}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Application()}{\string~Application()}}
+{\footnotesize\ttfamily Application\+::\texorpdfstring{$\sim$}{\string~}\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor for this \doxylink{class_application}{Application}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_application_a72747c744fd95cb6f96350bf58b326a6}\label{class_application_a72747c744fd95cb6f96350bf58b326a6} 
+\index{Application@{Application}!Input@{Input}}
+\index{Input@{Input}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void Application\+::\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The Input method for this \doxylink{class_application}{Application}\textquotesingle{}s Game Loop. When called, will call Input in any \doxylink{class_scene}{Scene} or Game Entity applicable. Depending on User Input, will change attributes about the scene in some meaningful way. (Intended to be used in a Loop.) \Hypertarget{class_application_add8435e8cede1ab06a59cdc220ea394c}\label{class_application_add8435e8cede1ab06a59cdc220ea394c} 
+\index{Application@{Application}!Loop@{Loop}}
+\index{Loop@{Loop}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{Loop()}{Loop()}}
+{\footnotesize\ttfamily void Application\+::\+Loop (\begin{DoxyParamCaption}\item[{float}]{target\+FPS }\end{DoxyParamCaption})}
+
+This \doxylink{class_application}{Application}\textquotesingle{}s Game Loop. Calls Input, Update, and Render in a cycle until the \doxylink{class_application}{Application} is Shutdown.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+FPS} & -- a float representing the framerate the application is aiming for so it doens\textquotesingle{}t run too fast. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_application_a6f40ffdb97f3a938ae19ea4eae4882ed}\label{class_application_a6f40ffdb97f3a938ae19ea4eae4882ed} 
+\index{Application@{Application}!Render@{Render}}
+\index{Render@{Render}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Application\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The Render method for this \doxylink{class_application}{Application}\textquotesingle{}s Game Loop. When called, will call Render in any \doxylink{class_scene}{Scene} or Game Entity applicable. Renders everything available to a scene. (Intended to be used in a Loop.) \Hypertarget{class_application_a817892cf56c1c333d53be31e73e8c2f8}\label{class_application_a817892cf56c1c333d53be31e73e8c2f8} 
+\index{Application@{Application}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void Application\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Shutting down the \doxylink{class_application}{Application}. Closes/\+Destroys SDL \& the GUI before quitting. \Hypertarget{class_application_ad46cc41d95fe3e730e35f65138d834f2}\label{class_application_ad46cc41d95fe3e730e35f65138d834f2} 
+\index{Application@{Application}!StartUp@{StartUp}}
+\index{StartUp@{StartUp}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{StartUp()}{StartUp()}}
+{\footnotesize\ttfamily void Application\+::\+Start\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Setting up the \doxylink{class_application}{Application} to run. Sets up SDL, Sets up our GUI, and Loads the Initial \doxylink{class_scene}{Scene}. \Hypertarget{class_application_a72f9820ca25c093f6c2c4b2812f6a2a4}\label{class_application_a72f9820ca25c093f6c2c4b2812f6a2a4} 
+\index{Application@{Application}!Update@{Update}}
+\index{Update@{Update}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Application\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The Update method for this \doxylink{class_application}{Application}\textquotesingle{}s Game Loop. When called, will call Update in any \doxylink{class_scene}{Scene} or Game Entity applicable. Updates attributes about the scene in some meaningful way every frame available. (Intended to be used in a Loop.) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_application_8hpp}{Application.\+hpp}}\end{DoxyCompactItemize}

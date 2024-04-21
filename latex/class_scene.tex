@@ -1,0 +1,416 @@
+\doxysection{Scene Class Reference}
+\hypertarget{class_scene}{}\label{class_scene}\index{Scene@{Scene}}
+
+
+{\ttfamily \#include $<$Scene.\+hpp$>$}
+
+
+
+Collaboration diagram for Scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_scene__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_ad10176d75a9cc0da56626f682d083507}{Scene}} ()
+\item 
+\mbox{\hyperlink{class_scene_a3b8cec2e32546713915f8c6303c951f1}{\texorpdfstring{$\sim$}{\string~}\+Scene}} ()
+\item 
+void \mbox{\hyperlink{class_scene_ae98753ff24e7dfb41b45aa1d212c5e82}{Start\+Up}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer)
+\item 
+void \mbox{\hyperlink{class_scene_ac3663babd72a75e40dbfa6757ffae18f}{Input}} ()
+\item 
+void \mbox{\hyperlink{class_scene_a71a71b4f7752b853ff8032b0941a9d8d}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_scene_a91913b921d41d374e00eac347358dc14}{Render}} ()
+\item 
+void \mbox{\hyperlink{class_scene_acf8dcd58f2b2f9e266bdf32084c44499}{Set\+Scene\+Active\+Status}} (bool activestatus)
+\item 
+bool \mbox{\hyperlink{class_scene_a99313203ab62b1692065d9780e0cd067}{Is\+Scene\+Active}} () const
+\item 
+void \mbox{\hyperlink{class_scene_a34408ce96bdffb44f94a9fab86bafbe8}{Save\+Scene}} (std\+::string filepath)
+\item 
+void \mbox{\hyperlink{class_scene_a0ea6f90e114e9f2502c999b35f2fab11}{Load\+Scene}} (std\+::string filepath)
+\item 
+void \mbox{\hyperlink{class_scene_a65ea420470061e1f6309b2a37688854e}{Set\+Renderer}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_scene_ac0c3f473f1c813acfb235b2d51178ba6}{Get\+Name}} ()
+\item 
+void \mbox{\hyperlink{class_scene_a3b2da99b5bc9fe058af10da6bd095acf}{Set\+Name}} (char \texorpdfstring{$\ast$}{*}n)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_scene_a4e1fa5629a55c7d48508e43969830b24}{Get\+Desc}} ()
+\item 
+void \mbox{\hyperlink{class_scene_a3c2933eb2bf9bdb18976637570aab569}{Set\+Desc}} (char \texorpdfstring{$\ast$}{*}desc)
+\item 
+void \mbox{\hyperlink{class_scene_a32d79ff0118a0bee5b342696cdd2051d}{Create\+Paddle}} (float x, float y)
+\item 
+void \mbox{\hyperlink{class_scene_a04fd9561426a07fd7a6d0c1e16e6f228}{Create\+Ball}} (float x, float y, float xdir, float ydir, float spd)
+\item 
+void \mbox{\hyperlink{class_scene_ad761164ad734a18cde1c64a620a00c93}{Create\+Death}} (float x, float y)
+\item 
+void \mbox{\hyperlink{class_scene_a48466edfce61aeded45b627137e75fbd}{Create\+Block}} (float x, float y, std\+::string subtype, std\+::string filepath)
+\item 
+void \mbox{\hyperlink{class_scene_a04b4d550aad404d891622d47f055ef33}{Set\+Status}} (std\+::string s)
+\item 
+std\+::string \mbox{\hyperlink{class_scene_ac7b3ceca90b52d51cad8e75e57c0db24}{Get\+Status}} ()
+\item 
+void \mbox{\hyperlink{class_scene_a2a8b253a0f77bf76dd8db6f8a4b3a892}{Set\+Mode}} (std\+::string m)
+\item 
+std\+::string \mbox{\hyperlink{class_scene_af5215c38d43325f9a871c75b68589c67}{Get\+Mode}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_scene_a0514f622f95af1501eb5f95c3f3e9f82}{name}}
+\begin{DoxyCompactList}\small\item\em the name of this scene. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_scene_a02596963718f672ba76a1cd14f118c9a}{description}}
+\begin{DoxyCompactList}\small\item\em the description of this scene. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_scene_a552cd2f40b8176937ddca2130ce1ecb9}{savefilepath}}
+\begin{DoxyCompactList}\small\item\em the filepath to save to. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_scene_ab642d8caae78a555875553fccdf3b18e}{loadfilepath}}
+\begin{DoxyCompactList}\small\item\em the filepath to load from. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_scene_a093384848941eb51ff56ea5c1177bd57}{currentfilepath}}
+\begin{DoxyCompactList}\small\item\em The current filepath that this scene is working in (for when the user edits save filepath field but doesnt save). \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_game_entity}{Game\+Entity}} $>$ $>$ \mbox{\hyperlink{class_scene_ae279219511fba6c4898f02bde81dbb65}{entities}}
+\begin{DoxyCompactList}\small\item\em All Game Entities in this \doxylink{class_scene}{Scene} (minus the Box Cursor). \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_game_entity}{Game\+Entity}} $>$ \mbox{\hyperlink{class_scene_a56554091661e8bc22e003d7459bc3a59}{cursor}}
+\begin{DoxyCompactList}\small\item\em The Box Cursor for Edit Mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representing a \doxylink{class_scene}{Scene} in our Engine. Contains Game Entities and Other Attributes that culminate to run a game in a small enviornment. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_scene_ad10176d75a9cc0da56626f682d083507}\label{class_scene_ad10176d75a9cc0da56626f682d083507} 
+\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Scene()}{Scene()}}
+{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor for this \doxylink{class_scene}{Scene}. \Hypertarget{class_scene_a3b8cec2e32546713915f8c6303c951f1}\label{class_scene_a3b8cec2e32546713915f8c6303c951f1} 
+\index{Scene@{Scene}!````~Scene@{\texorpdfstring{$\sim$}{\string~}Scene}}
+\index{````~Scene@{\texorpdfstring{$\sim$}{\string~}Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Scene()}{\string~Scene()}}
+{\footnotesize\ttfamily Scene\+::\texorpdfstring{$\sim$}{\string~}\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor for this \doxylink{class_scene}{Scene}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scene_a04fd9561426a07fd7a6d0c1e16e6f228}\label{class_scene_a04fd9561426a07fd7a6d0c1e16e6f228} 
+\index{Scene@{Scene}!CreateBall@{CreateBall}}
+\index{CreateBall@{CreateBall}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{CreateBall()}{CreateBall()}}
+{\footnotesize\ttfamily void Scene\+::\+Create\+Ball (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{xdir,  }\item[{float}]{ydir,  }\item[{float}]{spd }\end{DoxyParamCaption})}
+
+Creates a Ball Game Entity to append to this \doxylink{class_scene}{Scene}\textquotesingle{}s list of Game Entities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -- a float representing the x coordinate that this ball is being made to. \\
+\hline
+{\em y} & -- a float representing the y coordinate that this ball is being made to. \\
+\hline
+{\em xdir} & -- a float reprenting the x magnitude for the direction this ball will initially be moving in. \\
+\hline
+{\em ydir} & -- a float reprenting the y magnitude for the direction this ball will initially be moving in. \\
+\hline
+{\em spd} & -- a float representing the initial speed of this ball. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scene_a48466edfce61aeded45b627137e75fbd}\label{class_scene_a48466edfce61aeded45b627137e75fbd} 
+\index{Scene@{Scene}!CreateBlock@{CreateBlock}}
+\index{CreateBlock@{CreateBlock}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{CreateBlock()}{CreateBlock()}}
+{\footnotesize\ttfamily void Scene\+::\+Create\+Block (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{std\+::string}]{subtype,  }\item[{std\+::string}]{filepath }\end{DoxyParamCaption})}
+
+Creates a Block Game Entity to append to this \doxylink{class_scene}{Scene}\textquotesingle{}s list of Game Entities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -- a float representing the x coordinate that this block is being made to. \\
+\hline
+{\em y} & -- a float representing the y coordinate that this block is being made to. \\
+\hline
+{\em subtype} & -- a string representing the subtype of this entity (i.\+e. blueblock, redblock, etc.) \\
+\hline
+{\em filepath} & -- a string representing a filepath for the texture of this block. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scene_ad761164ad734a18cde1c64a620a00c93}\label{class_scene_ad761164ad734a18cde1c64a620a00c93} 
+\index{Scene@{Scene}!CreateDeath@{CreateDeath}}
+\index{CreateDeath@{CreateDeath}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{CreateDeath()}{CreateDeath()}}
+{\footnotesize\ttfamily void Scene\+::\+Create\+Death (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+Creates a Death Plane Game Entity to append to this \doxylink{class_scene}{Scene}\textquotesingle{}s list of Game Entities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -- a float representing the x coordinate that this death plane is being made to. \\
+\hline
+{\em y} & -- a float representing the y coordinate that this death plane is being made to. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scene_a32d79ff0118a0bee5b342696cdd2051d}\label{class_scene_a32d79ff0118a0bee5b342696cdd2051d} 
+\index{Scene@{Scene}!CreatePaddle@{CreatePaddle}}
+\index{CreatePaddle@{CreatePaddle}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{CreatePaddle()}{CreatePaddle()}}
+{\footnotesize\ttfamily void Scene\+::\+Create\+Paddle (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+Creates a Paddle Game Entity to append to this \doxylink{class_scene}{Scene}\textquotesingle{}s list of Game Entities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -- a float representing the x coordinate that this paddle is being made to. \\
+\hline
+{\em y} & -- a float representing the y coordinate that this paddle is being made to. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scene_a4e1fa5629a55c7d48508e43969830b24}\label{class_scene_a4e1fa5629a55c7d48508e43969830b24} 
+\index{Scene@{Scene}!GetDesc@{GetDesc}}
+\index{GetDesc@{GetDesc}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{GetDesc()}{GetDesc()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} Scene\+::\+Get\+Desc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the Description of this \doxylink{class_scene}{Scene}. \Hypertarget{class_scene_af5215c38d43325f9a871c75b68589c67}\label{class_scene_af5215c38d43325f9a871c75b68589c67} 
+\index{Scene@{Scene}!GetMode@{GetMode}}
+\index{GetMode@{GetMode}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{GetMode()}{GetMode()}}
+{\footnotesize\ttfamily std\+::string Scene\+::\+Get\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns this \doxylink{class_scene}{Scene}\textquotesingle{}s Engine Mode. \Hypertarget{class_scene_ac0c3f473f1c813acfb235b2d51178ba6}\label{class_scene_ac0c3f473f1c813acfb235b2d51178ba6} 
+\index{Scene@{Scene}!GetName@{GetName}}
+\index{GetName@{GetName}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} Scene\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the name of this \doxylink{class_scene}{Scene}. \Hypertarget{class_scene_ac7b3ceca90b52d51cad8e75e57c0db24}\label{class_scene_ac7b3ceca90b52d51cad8e75e57c0db24} 
+\index{Scene@{Scene}!GetStatus@{GetStatus}}
+\index{GetStatus@{GetStatus}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{GetStatus()}{GetStatus()}}
+{\footnotesize\ttfamily std\+::string Scene\+::\+Get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns this \doxylink{class_scene}{Scene}\textquotesingle{}s Game Status. \Hypertarget{class_scene_ac3663babd72a75e40dbfa6757ffae18f}\label{class_scene_ac3663babd72a75e40dbfa6757ffae18f} 
+\index{Scene@{Scene}!Input@{Input}}
+\index{Input@{Input}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void Scene\+::\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The Input portion of the Game Loop. Depending on whether the Engine is in EDIT mode or PLAY mode, will either call Input on the Box Cursor or on this \doxylink{class_scene}{Scene}\textquotesingle{}s Game Entities. \Hypertarget{class_scene_a99313203ab62b1692065d9780e0cd067}\label{class_scene_a99313203ab62b1692065d9780e0cd067} 
+\index{Scene@{Scene}!IsSceneActive@{IsSceneActive}}
+\index{IsSceneActive@{IsSceneActive}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{IsSceneActive()}{IsSceneActive()}}
+{\footnotesize\ttfamily bool Scene\+::\+Is\+Scene\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns whether or not this \doxylink{class_scene}{Scene} is active. \Hypertarget{class_scene_a0ea6f90e114e9f2502c999b35f2fab11}\label{class_scene_a0ea6f90e114e9f2502c999b35f2fab11} 
+\index{Scene@{Scene}!LoadScene@{LoadScene}}
+\index{LoadScene@{LoadScene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{LoadScene()}{LoadScene()}}
+{\footnotesize\ttfamily void Scene\+::\+Load\+Scene (\begin{DoxyParamCaption}\item[{std\+::string}]{filepath }\end{DoxyParamCaption})}
+
+Loads in information to this \doxylink{class_scene}{Scene} from the Specified File.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filepath} & -- the string reprensting the file to load from. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scene_a91913b921d41d374e00eac347358dc14}\label{class_scene_a91913b921d41d374e00eac347358dc14} 
+\index{Scene@{Scene}!Render@{Render}}
+\index{Render@{Render}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Scene\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The Render portion of the Game Loop. Handles certain Im\+Gui logic and Renders the background, cursor (if on EDIT mode) and all of its Game\+Entities. \Hypertarget{class_scene_a34408ce96bdffb44f94a9fab86bafbe8}\label{class_scene_a34408ce96bdffb44f94a9fab86bafbe8} 
+\index{Scene@{Scene}!SaveScene@{SaveScene}}
+\index{SaveScene@{SaveScene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SaveScene()}{SaveScene()}}
+{\footnotesize\ttfamily void Scene\+::\+Save\+Scene (\begin{DoxyParamCaption}\item[{std\+::string}]{filepath }\end{DoxyParamCaption})}
+
+Saves this \doxylink{class_scene}{Scene}\textquotesingle{}s Information to the Specified File.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filepath} & -- the string reprensting the file to save to. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scene_a3c2933eb2bf9bdb18976637570aab569}\label{class_scene_a3c2933eb2bf9bdb18976637570aab569} 
+\index{Scene@{Scene}!SetDesc@{SetDesc}}
+\index{SetDesc@{SetDesc}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SetDesc()}{SetDesc()}}
+{\footnotesize\ttfamily void Scene\+::\+Set\+Desc (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{desc }\end{DoxyParamCaption})}
+
+Updates the description of this \doxylink{class_scene}{Scene} to the given description.
+
+
+\begin{DoxyParams}{Parameters}
+{\em desc} & -- the new description of this scene. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scene_a2a8b253a0f77bf76dd8db6f8a4b3a892}\label{class_scene_a2a8b253a0f77bf76dd8db6f8a4b3a892} 
+\index{Scene@{Scene}!SetMode@{SetMode}}
+\index{SetMode@{SetMode}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SetMode()}{SetMode()}}
+{\footnotesize\ttfamily void Scene\+::\+Set\+Mode (\begin{DoxyParamCaption}\item[{std\+::string}]{m }\end{DoxyParamCaption})}
+
+Sets the Engine Mode of the \doxylink{class_scene}{Scene} (intended to be between \textquotesingle{}play\textquotesingle{}, \textquotesingle{}edit\textquotesingle{}, and \textquotesingle{}write\textquotesingle{})
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & -- the string that this scene\textquotesingle{}s mode will be set to. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scene_a3b2da99b5bc9fe058af10da6bd095acf}\label{class_scene_a3b2da99b5bc9fe058af10da6bd095acf} 
+\index{Scene@{Scene}!SetName@{SetName}}
+\index{SetName@{SetName}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SetName()}{SetName()}}
+{\footnotesize\ttfamily void Scene\+::\+Set\+Name (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{n }\end{DoxyParamCaption})}
+
+Sets the name of this scene to the given name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & -- the new name of this \doxylink{class_scene}{Scene}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scene_a65ea420470061e1f6309b2a37688854e}\label{class_scene_a65ea420470061e1f6309b2a37688854e} 
+\index{Scene@{Scene}!SetRenderer@{SetRenderer}}
+\index{SetRenderer@{SetRenderer}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SetRenderer()}{SetRenderer()}}
+{\footnotesize\ttfamily void Scene\+::\+Set\+Renderer (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})}
+
+Sets this scene\textquotesingle{}s renderer to the specfied renderer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & -- the renderer to update this scene\textquotesingle{}s renderer to. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scene_acf8dcd58f2b2f9e266bdf32084c44499}\label{class_scene_acf8dcd58f2b2f9e266bdf32084c44499} 
+\index{Scene@{Scene}!SetSceneActiveStatus@{SetSceneActiveStatus}}
+\index{SetSceneActiveStatus@{SetSceneActiveStatus}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SetSceneActiveStatus()}{SetSceneActiveStatus()}}
+{\footnotesize\ttfamily void Scene\+::\+Set\+Scene\+Active\+Status (\begin{DoxyParamCaption}\item[{bool}]{activestatus }\end{DoxyParamCaption})}
+
+Updates this \doxylink{class_scene}{Scene}\textquotesingle{}s Active Status.
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & -- boolean for whether or not this \doxylink{class_scene}{Scene} is active. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scene_a04b4d550aad404d891622d47f055ef33}\label{class_scene_a04b4d550aad404d891622d47f055ef33} 
+\index{Scene@{Scene}!SetStatus@{SetStatus}}
+\index{SetStatus@{SetStatus}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SetStatus()}{SetStatus()}}
+{\footnotesize\ttfamily void Scene\+::\+Set\+Status (\begin{DoxyParamCaption}\item[{std\+::string}]{s }\end{DoxyParamCaption})}
+
+Sets the Game Status of the \doxylink{class_scene}{Scene} (intended to be between \textquotesingle{}normal\textquotesingle{}, \textquotesingle{}win\textquotesingle{}, and \textquotesingle{}lose\textquotesingle{})
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & -- the string that this scene\textquotesingle{}s status will be set to. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scene_ae98753ff24e7dfb41b45aa1d212c5e82}\label{class_scene_ae98753ff24e7dfb41b45aa1d212c5e82} 
+\index{Scene@{Scene}!StartUp@{StartUp}}
+\index{StartUp@{StartUp}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{StartUp()}{StartUp()}}
+{\footnotesize\ttfamily void Scene\+::\+Start\+Up (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})}
+
+Setting Up the \doxylink{class_scene}{Scene} (and Editor) by establishing a Renderer (and setting up the Box Cursor).
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & -- The renderer that will be renderering everything in the \doxylink{class_scene}{Scene}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_scene_a71a71b4f7752b853ff8032b0941a9d8d}\label{class_scene_a71a71b4f7752b853ff8032b0941a9d8d} 
+\index{Scene@{Scene}!Update@{Update}}
+\index{Update@{Update}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Scene\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The Update portion of the Game Loop. Handles Ball Collision and Updating the rest of this \doxylink{class_scene}{Scene}\textquotesingle{}s Game Entities. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_scene_a093384848941eb51ff56ea5c1177bd57}\label{class_scene_a093384848941eb51ff56ea5c1177bd57} 
+\index{Scene@{Scene}!currentfilepath@{currentfilepath}}
+\index{currentfilepath@{currentfilepath}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{currentfilepath}{currentfilepath}}
+{\footnotesize\ttfamily char\texorpdfstring{$\ast$}{*} Scene\+::currentfilepath}
+
+
+
+The current filepath that this scene is working in (for when the user edits save filepath field but doesnt save). 
+
+\Hypertarget{class_scene_a56554091661e8bc22e003d7459bc3a59}\label{class_scene_a56554091661e8bc22e003d7459bc3a59} 
+\index{Scene@{Scene}!cursor@{cursor}}
+\index{cursor@{cursor}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{cursor}{cursor}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{struct_game_entity}{Game\+Entity}}$>$ Scene\+::cursor}
+
+
+
+The Box Cursor for Edit Mode. 
+
+\Hypertarget{class_scene_a02596963718f672ba76a1cd14f118c9a}\label{class_scene_a02596963718f672ba76a1cd14f118c9a} 
+\index{Scene@{Scene}!description@{description}}
+\index{description@{description}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily char\texorpdfstring{$\ast$}{*} Scene\+::description}
+
+
+
+the description of this scene. 
+
+\Hypertarget{class_scene_ae279219511fba6c4898f02bde81dbb65}\label{class_scene_ae279219511fba6c4898f02bde81dbb65} 
+\index{Scene@{Scene}!entities@{entities}}
+\index{entities@{entities}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{entities}{entities}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{struct_game_entity}{Game\+Entity}}$>$ $>$ Scene\+::entities}
+
+
+
+All Game Entities in this \doxylink{class_scene}{Scene} (minus the Box Cursor). 
+
+\Hypertarget{class_scene_ab642d8caae78a555875553fccdf3b18e}\label{class_scene_ab642d8caae78a555875553fccdf3b18e} 
+\index{Scene@{Scene}!loadfilepath@{loadfilepath}}
+\index{loadfilepath@{loadfilepath}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{loadfilepath}{loadfilepath}}
+{\footnotesize\ttfamily char\texorpdfstring{$\ast$}{*} Scene\+::loadfilepath}
+
+
+
+the filepath to load from. 
+
+\Hypertarget{class_scene_a0514f622f95af1501eb5f95c3f3e9f82}\label{class_scene_a0514f622f95af1501eb5f95c3f3e9f82} 
+\index{Scene@{Scene}!name@{name}}
+\index{name@{name}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily char\texorpdfstring{$\ast$}{*} Scene\+::name}
+
+
+
+the name of this scene. 
+
+\Hypertarget{class_scene_a552cd2f40b8176937ddca2130ce1ecb9}\label{class_scene_a552cd2f40b8176937ddca2130ce1ecb9} 
+\index{Scene@{Scene}!savefilepath@{savefilepath}}
+\index{savefilepath@{savefilepath}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{savefilepath}{savefilepath}}
+{\footnotesize\ttfamily char\texorpdfstring{$\ast$}{*} Scene\+::savefilepath}
+
+
+
+the filepath to save to. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_scene_8hpp}{Scene.\+hpp}}\end{DoxyCompactItemize}

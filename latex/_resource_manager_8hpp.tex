@@ -1,0 +1,52 @@
+\doxysection{include/\+Resource\+Manager.hpp File Reference}
+\hypertarget{_resource_manager_8hpp}{}\label{_resource_manager_8hpp}\index{include/ResourceManager.hpp@{include/ResourceManager.hpp}}
+{\ttfamily \#include $<$SDL3/\+SDL.\+h$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for Resource\+Manager.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_resource_manager_8hpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_texture_functor_deleter}{Texture\+Functor\+Deleter}}
+\item 
+struct \mbox{\hyperlink{struct_resource_manager}{Resource\+Manager}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ SDL\+\_\+\+Texture $>$ \mbox{\hyperlink{_resource_manager_8hpp_aa68b14d4ed8455460b3579ef4503d106}{make\+\_\+shared\+\_\+texture}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Surface \texorpdfstring{$\ast$}{*}pixels)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_resource_manager_8hpp_aa68b14d4ed8455460b3579ef4503d106}\label{_resource_manager_8hpp_aa68b14d4ed8455460b3579ef4503d106} 
+\index{ResourceManager.hpp@{ResourceManager.hpp}!make\_shared\_texture@{make\_shared\_texture}}
+\index{make\_shared\_texture@{make\_shared\_texture}!ResourceManager.hpp@{ResourceManager.hpp}}
+\doxysubsubsection{\texorpdfstring{make\_shared\_texture()}{make\_shared\_texture()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ SDL\+\_\+\+Texture $>$ make\+\_\+shared\+\_\+texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer,  }\item[{SDL\+\_\+\+Surface \texorpdfstring{$\ast$}{*}}]{pixels }\end{DoxyParamCaption})}
+
+Makes a Shared Pointer for a Texture given a renderer and a surface.
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & -- the renderer that\textquotesingle{}ll render everything. \\
+\hline
+{\em pixels} & -- the SDL\+\_\+\+Surface for this texture. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_resource_manager_8hpp_aa68b14d4ed8455460b3579ef4503d106_icgraph}
+\end{center}
+\end{figure}

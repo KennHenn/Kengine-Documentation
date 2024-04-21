@@ -1,0 +1,186 @@
+\doxysection{Input\+Component Struct Reference}
+\hypertarget{struct_input_component}{}\label{struct_input_component}\index{InputComponent@{InputComponent}}
+
+
+{\ttfamily \#include $<$Input\+Component.\+hpp$>$}
+
+
+
+Inheritance diagram for Input\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{struct_input_component__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Input\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{struct_input_component__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_input_component_ae3af150f66c8e72ea4bef4b089c48d99}{Input\+Component}} ()
+\item 
+\mbox{\hyperlink{struct_input_component_a0d6ca9efb277dc103abc31d66fd7ecbb}{Input\+Component}} (float spd)
+\item 
+\mbox{\hyperlink{struct_input_component_a50e6b9501302f0c8f055325ca652050e}{\texorpdfstring{$\sim$}{\string~}\+Input\+Component}} ()
+\item 
+\mbox{\hyperlink{_component_type_8hpp_a179460a59015cda603e42e8a71d6e043}{Component\+Type}} \mbox{\hyperlink{struct_input_component_a3de33e654abe7a2cee6f049c6f26a3ef}{Get\+Type}} () override
+\item 
+void \mbox{\hyperlink{struct_input_component_a35262441c6464035a8d96b7fc0329093}{Input}} () override
+\item 
+void \mbox{\hyperlink{struct_input_component_aa81fd4888930b1df95a1ada47ef833c9}{Update}} () override
+\item 
+void \mbox{\hyperlink{struct_input_component_a5d83db2e7b525078c6d9075bf5034fde}{Render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer) override
+\item 
+float \mbox{\hyperlink{struct_input_component_a4016448cf02029cb0fe72f0b6bc6ddd1}{Get\+Speed}} ()
+\item 
+void \mbox{\hyperlink{struct_input_component_a73d84c3d1d115c4519c945073be339cb}{Set\+Speed}} (float spd)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{struct_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}} ()
+\item 
+virtual \mbox{\hyperlink{struct_component_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\item 
+void \mbox{\hyperlink{struct_component_a92fc19214ae6a73ee22824d85d1a1b99}{Set\+Game\+Entity}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_game_entity}{Game\+Entity}} $>$ g)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_game_entity}{Game\+Entity}} $>$ \mbox{\hyperlink{struct_component_ad1000f79fe140ee4cc90d0b23cd6c035}{Get\+Game\+Entity}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{struct_input_component_a143bf8057eccf353737121b242fcf362}{m\+Speed}} \{150.\+0f\}
+\begin{DoxyCompactList}\small\item\em The Speed of this Input \doxylink{struct_component}{Component}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{struct_input_component_a2118b344bacbc6ece5ff602065fc8187}{inputtype}} = "{}Player"{}
+\begin{DoxyCompactList}\small\item\em The Type of Game Entity for Handling input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representing a \doxylink{struct_component}{Component} for taking in Input. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_input_component_ae3af150f66c8e72ea4bef4b089c48d99}\label{struct_input_component_ae3af150f66c8e72ea4bef4b089c48d99} 
+\index{InputComponent@{InputComponent}!InputComponent@{InputComponent}}
+\index{InputComponent@{InputComponent}!InputComponent@{InputComponent}}
+\doxysubsubsection{\texorpdfstring{InputComponent()}{InputComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Input\+Component\+::\+Input\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor for this \doxylink{struct_input_component}{Input\+Component}. \Hypertarget{struct_input_component_a0d6ca9efb277dc103abc31d66fd7ecbb}\label{struct_input_component_a0d6ca9efb277dc103abc31d66fd7ecbb} 
+\index{InputComponent@{InputComponent}!InputComponent@{InputComponent}}
+\index{InputComponent@{InputComponent}!InputComponent@{InputComponent}}
+\doxysubsubsection{\texorpdfstring{InputComponent()}{InputComponent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Input\+Component\+::\+Input\+Component (\begin{DoxyParamCaption}\item[{float}]{spd }\end{DoxyParamCaption})}
+
+Constructor for this \doxylink{struct_input_component}{Input\+Component} that includes Speed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em spd} & -- Sets the spd of this \doxylink{struct_input_component}{Input\+Component} to the given Speed. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_input_component_a50e6b9501302f0c8f055325ca652050e}\label{struct_input_component_a50e6b9501302f0c8f055325ca652050e} 
+\index{InputComponent@{InputComponent}!````~InputComponent@{\texorpdfstring{$\sim$}{\string~}InputComponent}}
+\index{````~InputComponent@{\texorpdfstring{$\sim$}{\string~}InputComponent}!InputComponent@{InputComponent}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}InputComponent()}{\string~InputComponent()}}
+{\footnotesize\ttfamily Input\+Component\+::\texorpdfstring{$\sim$}{\string~}\+Input\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor for this \doxylink{struct_input_component}{Input\+Component}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_input_component_a4016448cf02029cb0fe72f0b6bc6ddd1}\label{struct_input_component_a4016448cf02029cb0fe72f0b6bc6ddd1} 
+\index{InputComponent@{InputComponent}!GetSpeed@{GetSpeed}}
+\index{GetSpeed@{GetSpeed}!InputComponent@{InputComponent}}
+\doxysubsubsection{\texorpdfstring{GetSpeed()}{GetSpeed()}}
+{\footnotesize\ttfamily float Input\+Component\+::\+Get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the Speed of this \doxylink{struct_input_component}{Input\+Component}. \Hypertarget{struct_input_component_a3de33e654abe7a2cee6f049c6f26a3ef}\label{struct_input_component_a3de33e654abe7a2cee6f049c6f26a3ef} 
+\index{InputComponent@{InputComponent}!GetType@{GetType}}
+\index{GetType@{GetType}!InputComponent@{InputComponent}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_component_type_8hpp_a179460a59015cda603e42e8a71d6e043}{Component\+Type}} Input\+Component\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns the Component\+Type (\doxylink{struct_input_component}{Input\+Component}) of this \doxylink{struct_input_component}{Input\+Component}. 
+
+Implements \mbox{\hyperlink{struct_component_a2e87d60cd7150786e51bfcda7129ed90}{Component}}.
+
+\Hypertarget{struct_input_component_a35262441c6464035a8d96b7fc0329093}\label{struct_input_component_a35262441c6464035a8d96b7fc0329093} 
+\index{InputComponent@{InputComponent}!Input@{Input}}
+\index{Input@{Input}!InputComponent@{InputComponent}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void Input\+Component\+::\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The Input portion of the Game Loop. Handles Reacting to Input for the associated Game Entity. Effect differs depending on Game Entity Type. 
+
+Reimplemented from \mbox{\hyperlink{struct_component_abba211bfa6a773487aa8d354a8138d9d}{Component}}.
+
+\Hypertarget{struct_input_component_a5d83db2e7b525078c6d9075bf5034fde}\label{struct_input_component_a5d83db2e7b525078c6d9075bf5034fde} 
+\index{InputComponent@{InputComponent}!Render@{Render}}
+\index{Render@{Render}!InputComponent@{InputComponent}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Input\+Component\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The Render portion of the Game Loop. (Does nothing in \doxylink{struct_input_component}{Input\+Component}.) 
+
+Reimplemented from \mbox{\hyperlink{struct_component_a223de42285cca9e02809120c1a44c4ac}{Component}}.
+
+\Hypertarget{struct_input_component_a73d84c3d1d115c4519c945073be339cb}\label{struct_input_component_a73d84c3d1d115c4519c945073be339cb} 
+\index{InputComponent@{InputComponent}!SetSpeed@{SetSpeed}}
+\index{SetSpeed@{SetSpeed}!InputComponent@{InputComponent}}
+\doxysubsubsection{\texorpdfstring{SetSpeed()}{SetSpeed()}}
+{\footnotesize\ttfamily void Input\+Component\+::\+Set\+Speed (\begin{DoxyParamCaption}\item[{float}]{spd }\end{DoxyParamCaption})}
+
+Updates the speed of this \doxylink{struct_input_component}{Input\+Component}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em spd} & -- the float to update this \doxylink{struct_input_component}{Input\+Component}\textquotesingle{}s speed to. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_input_component_aa81fd4888930b1df95a1ada47ef833c9}\label{struct_input_component_aa81fd4888930b1df95a1ada47ef833c9} 
+\index{InputComponent@{InputComponent}!Update@{Update}}
+\index{Update@{Update}!InputComponent@{InputComponent}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Input\+Component\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The Update portion of the Game Loop. (Does nothing in \doxylink{struct_input_component}{Input\+Component}.) 
+
+Reimplemented from \mbox{\hyperlink{struct_component_aaf2ce6dc5752072492f790ad4c7955bb}{Component}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_input_component_a2118b344bacbc6ece5ff602065fc8187}\label{struct_input_component_a2118b344bacbc6ece5ff602065fc8187} 
+\index{InputComponent@{InputComponent}!inputtype@{inputtype}}
+\index{inputtype@{inputtype}!InputComponent@{InputComponent}}
+\doxysubsubsection{\texorpdfstring{inputtype}{inputtype}}
+{\footnotesize\ttfamily std\+::string Input\+Component\+::inputtype = "{}Player"{}}
+
+
+
+The Type of Game Entity for Handling input. 
+
+\Hypertarget{struct_input_component_a143bf8057eccf353737121b242fcf362}\label{struct_input_component_a143bf8057eccf353737121b242fcf362} 
+\index{InputComponent@{InputComponent}!mSpeed@{mSpeed}}
+\index{mSpeed@{mSpeed}!InputComponent@{InputComponent}}
+\doxysubsubsection{\texorpdfstring{mSpeed}{mSpeed}}
+{\footnotesize\ttfamily float Input\+Component\+::m\+Speed \{150.\+0f\}}
+
+
+
+The Speed of this Input \doxylink{struct_component}{Component}. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_input_component_8hpp}{Input\+Component.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+<map id="InputComponent" name="InputComponent">
+<area shape="rect" id="Node000001" title=" " alt="" coords="103,288,237,528"/>
+<area shape="rect" id="Node000002" href="$struct_component.html" title=" " alt="" coords="5,5,127,224"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,237,130,287,125,289,107,239"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="151,80,189,149"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,149,173,271,167,271,167,149"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="238,80,283,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="259,149,249,204,234,265,231,273,226,271,229,263,244,203,254,148"/>
+</map>

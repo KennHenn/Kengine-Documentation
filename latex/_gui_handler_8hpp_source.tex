@@ -1,0 +1,49 @@
+\doxysection{Gui\+Handler.\+hpp}
+\hypertarget{_gui_handler_8hpp_source}{}\label{_gui_handler_8hpp_source}\index{include/GuiHandler.hpp@{include/GuiHandler.hpp}}
+\mbox{\hyperlink{_gui_handler_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ GuiHandler.hpp}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <SDL3/SDL.h>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <cstdlib>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_scene_8hpp}{Scene.hpp}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_gui_handler}{GuiHandler}}\ \{}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_gui_handler_a99eb14729023772c36c48517d24218b5}{GuiHandler}}();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_gui_handler_a00edb4158b67599cf9a97ed147291795}{\string~GuiHandler}}();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gui_handler_af6409a4f3aae9280d74b3ef1d1f3d238}{StartUp}}(SDL\_Renderer*\ renderer,\ SDL\_Window*\ window);\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gui_handler_ab0fb78709c0b1b95102ba0fbf8b38337}{Shutdown}}();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gui_handler_a6b283b10e3aeaed1ded440fd2aa7bbb3}{Input}}();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gui_handler_ab71e3726285bc9e1e69481a87fc8b4c7}{Update}}();}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gui_handler_ac62d525b3b0f0b369c1ea551ff3dfa1f}{Render}}();}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gui_handler_a6c4b88fbb8a2bd2dc55866d67e6e15b6}{Process}}(SDL\_Event*\ e);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_gui_handler_ac15dfad0813438e4445229de8f8049b7}{GetSelectedObjectName}}();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_gui_handler_a55d7df5d698afc9bde9795f38ea2c821}{SetFirstTime}}(\textcolor{keywordtype}{bool}\ val);}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \mbox{\hyperlink{class_scene}{Scene}}\ \mbox{\hyperlink{class_gui_handler_a79cca48aa23c5fe0ddda242500c3ba0a}{rScene}};\ \ \ }
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{bool}\ firsttime\ =\ \textcolor{keyword}{true};\ \ \ \ \ \ }
+\DoxyCodeLine{00085\ \ \ \ \ SDL\_Renderer*\ mRenderer;\ \ \ \ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{char}*\ selectedobjectname;\ \ \ }
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \};}
+
+\end{DoxyCode}

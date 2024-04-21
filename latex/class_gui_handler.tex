@@ -1,0 +1,154 @@
+\doxysection{Gui\+Handler Class Reference}
+\hypertarget{class_gui_handler}{}\label{class_gui_handler}\index{GuiHandler@{GuiHandler}}
+
+
+{\ttfamily \#include $<$Gui\+Handler.\+hpp$>$}
+
+
+
+Collaboration diagram for Gui\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_gui_handler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gui_handler_a99eb14729023772c36c48517d24218b5}{Gui\+Handler}} ()
+\item 
+\mbox{\hyperlink{class_gui_handler_a00edb4158b67599cf9a97ed147291795}{\texorpdfstring{$\sim$}{\string~}\+Gui\+Handler}} ()
+\item 
+void \mbox{\hyperlink{class_gui_handler_af6409a4f3aae9280d74b3ef1d1f3d238}{Start\+Up}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*}window)
+\item 
+void \mbox{\hyperlink{class_gui_handler_ab0fb78709c0b1b95102ba0fbf8b38337}{Shutdown}} ()
+\item 
+void \mbox{\hyperlink{class_gui_handler_a6b283b10e3aeaed1ded440fd2aa7bbb3}{Input}} ()
+\item 
+void \mbox{\hyperlink{class_gui_handler_ab71e3726285bc9e1e69481a87fc8b4c7}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_gui_handler_ac62d525b3b0f0b369c1ea551ff3dfa1f}{Render}} ()
+\item 
+void \mbox{\hyperlink{class_gui_handler_a6c4b88fbb8a2bd2dc55866d67e6e15b6}{Process}} (SDL\+\_\+\+Event \texorpdfstring{$\ast$}{*}e)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_gui_handler_ac15dfad0813438e4445229de8f8049b7}{Get\+Selected\+Object\+Name}} ()
+\item 
+void \mbox{\hyperlink{class_gui_handler_a55d7df5d698afc9bde9795f38ea2c821}{Set\+First\+Time}} (bool val)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene}{Scene}} \mbox{\hyperlink{class_gui_handler_a79cca48aa23c5fe0ddda242500c3ba0a}{r\+Scene}}
+\begin{DoxyCompactList}\small\item\em The \doxylink{class_scene}{Scene} that the Engine will be working with. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the Backbone of the Engine that Handles Input, Updating, and Rendering each Iteration. Renders both GUI and Engine entities alike. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_gui_handler_a99eb14729023772c36c48517d24218b5}\label{class_gui_handler_a99eb14729023772c36c48517d24218b5} 
+\index{GuiHandler@{GuiHandler}!GuiHandler@{GuiHandler}}
+\index{GuiHandler@{GuiHandler}!GuiHandler@{GuiHandler}}
+\doxysubsubsection{\texorpdfstring{GuiHandler()}{GuiHandler()}}
+{\footnotesize\ttfamily Gui\+Handler\+::\+Gui\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor for this \doxylink{class_gui_handler}{Gui\+Handler}. \Hypertarget{class_gui_handler_a00edb4158b67599cf9a97ed147291795}\label{class_gui_handler_a00edb4158b67599cf9a97ed147291795} 
+\index{GuiHandler@{GuiHandler}!````~GuiHandler@{\texorpdfstring{$\sim$}{\string~}GuiHandler}}
+\index{````~GuiHandler@{\texorpdfstring{$\sim$}{\string~}GuiHandler}!GuiHandler@{GuiHandler}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}GuiHandler()}{\string~GuiHandler()}}
+{\footnotesize\ttfamily Gui\+Handler\+::\texorpdfstring{$\sim$}{\string~}\+Gui\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor for this \doxylink{class_application}{Application} (with arguments). 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_gui_handler_ac15dfad0813438e4445229de8f8049b7}\label{class_gui_handler_ac15dfad0813438e4445229de8f8049b7} 
+\index{GuiHandler@{GuiHandler}!GetSelectedObjectName@{GetSelectedObjectName}}
+\index{GetSelectedObjectName@{GetSelectedObjectName}!GuiHandler@{GuiHandler}}
+\doxysubsubsection{\texorpdfstring{GetSelectedObjectName()}{GetSelectedObjectName()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} Gui\+Handler\+::\+Get\+Selected\+Object\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the name of the current selected object. \Hypertarget{class_gui_handler_a6b283b10e3aeaed1ded440fd2aa7bbb3}\label{class_gui_handler_a6b283b10e3aeaed1ded440fd2aa7bbb3} 
+\index{GuiHandler@{GuiHandler}!Input@{Input}}
+\index{Input@{Input}!GuiHandler@{GuiHandler}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void Gui\+Handler\+::\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The Input Portion of the Game\+Loop. Handles Box Cursor Logic and calls on the \doxylink{class_scene}{Scene}\textquotesingle{}s Input to handle the Rest. \Hypertarget{class_gui_handler_a6c4b88fbb8a2bd2dc55866d67e6e15b6}\label{class_gui_handler_a6c4b88fbb8a2bd2dc55866d67e6e15b6} 
+\index{GuiHandler@{GuiHandler}!Process@{Process}}
+\index{Process@{Process}!GuiHandler@{GuiHandler}}
+\doxysubsubsection{\texorpdfstring{Process()}{Process()}}
+{\footnotesize\ttfamily void Gui\+Handler\+::\+Process (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \texorpdfstring{$\ast$}{*}}]{e }\end{DoxyParamCaption})}
+
+Im\+Gui Processing of an Event. (Exists purely to avoid having Im\+Gui components in Application.\+cpp).
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & -- the SDL\+\_\+\+Event to be processed. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_gui_handler_ac62d525b3b0f0b369c1ea551ff3dfa1f}\label{class_gui_handler_ac62d525b3b0f0b369c1ea551ff3dfa1f} 
+\index{GuiHandler@{GuiHandler}!Render@{Render}}
+\index{Render@{Render}!GuiHandler@{GuiHandler}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Gui\+Handler\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The Render Portion of the Game\+Loop. Handles Im\+Gui Rendering and calls on the \doxylink{class_scene}{Scene}\textquotesingle{}s Render to handle the Rest. \Hypertarget{class_gui_handler_a55d7df5d698afc9bde9795f38ea2c821}\label{class_gui_handler_a55d7df5d698afc9bde9795f38ea2c821} 
+\index{GuiHandler@{GuiHandler}!SetFirstTime@{SetFirstTime}}
+\index{SetFirstTime@{SetFirstTime}!GuiHandler@{GuiHandler}}
+\doxysubsubsection{\texorpdfstring{SetFirstTime()}{SetFirstTime()}}
+{\footnotesize\ttfamily void Gui\+Handler\+::\+Set\+First\+Time (\begin{DoxyParamCaption}\item[{bool}]{val }\end{DoxyParamCaption})}
+
+Sets whether or not this is the first time Looping through the Game Loop.
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & -- the boolean for whether or not it\textquotesingle{}s the first time. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_gui_handler_ab0fb78709c0b1b95102ba0fbf8b38337}\label{class_gui_handler_ab0fb78709c0b1b95102ba0fbf8b38337} 
+\index{GuiHandler@{GuiHandler}!Shutdown@{Shutdown}}
+\index{Shutdown@{Shutdown}!GuiHandler@{GuiHandler}}
+\doxysubsubsection{\texorpdfstring{Shutdown()}{Shutdown()}}
+{\footnotesize\ttfamily void Gui\+Handler\+::\+Shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Shuts down the Im\+Gui components. \Hypertarget{class_gui_handler_af6409a4f3aae9280d74b3ef1d1f3d238}\label{class_gui_handler_af6409a4f3aae9280d74b3ef1d1f3d238} 
+\index{GuiHandler@{GuiHandler}!StartUp@{StartUp}}
+\index{StartUp@{StartUp}!GuiHandler@{GuiHandler}}
+\doxysubsubsection{\texorpdfstring{StartUp()}{StartUp()}}
+{\footnotesize\ttfamily void Gui\+Handler\+::\+Start\+Up (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer,  }\item[{SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*}}]{window }\end{DoxyParamCaption})}
+
+Starts up the Im\+Gui components.
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & -- The SDL\+\_\+\+Renderer that will render everything. \\
+\hline
+{\em window} & -- the SDL\+\_\+\+Window that will contain everything. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_gui_handler_ab71e3726285bc9e1e69481a87fc8b4c7}\label{class_gui_handler_ab71e3726285bc9e1e69481a87fc8b4c7} 
+\index{GuiHandler@{GuiHandler}!Update@{Update}}
+\index{Update@{Update}!GuiHandler@{GuiHandler}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Gui\+Handler\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The Update Portion of the Game\+Loop. Calls on the \doxylink{class_scene}{Scene}\textquotesingle{}s Update to handle the Rest. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_gui_handler_a79cca48aa23c5fe0ddda242500c3ba0a}\label{class_gui_handler_a79cca48aa23c5fe0ddda242500c3ba0a} 
+\index{GuiHandler@{GuiHandler}!rScene@{rScene}}
+\index{rScene@{rScene}!GuiHandler@{GuiHandler}}
+\doxysubsubsection{\texorpdfstring{rScene}{rScene}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene}{Scene}} Gui\+Handler\+::r\+Scene}
+
+
+
+The \doxylink{class_scene}{Scene} that the Engine will be working with. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_gui_handler_8hpp}{Gui\+Handler.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,10 @@
+<map id="include/GameEntity.hpp" name="include/GameEntity.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,166,32"/>
+<area shape="rect" id="Node000002" href="$_scene_8hpp.html" title=" " alt="" coords="21,80,150,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,48,88,80,83,80,83,48"/>
+<area shape="rect" id="Node000003" href="$_application_8hpp.html" title=" " alt="" coords="8,229,163,256"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="71,121,56,155,55,175,60,195,78,227,73,230,55,197,50,176,51,154,66,119"/>
+<area shape="rect" id="Node000004" href="$_gui_handler_8hpp.html" title=" " alt="" coords="65,155,221,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="107,117,135,153,131,156,103,121"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="126,195,97,231,93,227,121,192"/>
+</map>

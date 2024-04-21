@@ -1,0 +1,66 @@
+\doxysection{Resource\+Manager Struct Reference}
+\hypertarget{struct_resource_manager}{}\label{struct_resource_manager}\index{ResourceManager@{ResourceManager}}
+
+
+{\ttfamily \#include $<$Resource\+Manager.\+hpp$>$}
+
+
+
+Collaboration diagram for Resource\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{struct_resource_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ SDL\+\_\+\+Texture $>$ \mbox{\hyperlink{struct_resource_manager_afc8dc26b9daeea53f9d062391d92970a}{Load\+Texture}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, std\+::string filepath)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{struct_resource_manager}{Resource\+Manager}} \& \mbox{\hyperlink{struct_resource_manager_a48cd1c56c64af260a6ddb5fbd4daae54}{Instance}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Resource Manager for Kengine handles Texture Loading as to not waste resources and hinder performance. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_resource_manager_a48cd1c56c64af260a6ddb5fbd4daae54}\label{struct_resource_manager_a48cd1c56c64af260a6ddb5fbd4daae54} 
+\index{ResourceManager@{ResourceManager}!Instance@{Instance}}
+\index{Instance@{Instance}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{struct_resource_manager}{Resource\+Manager}} \& Resource\+Manager\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Creates a \doxylink{struct_resource_manager}{Resource\+Manager} Instance. \Hypertarget{struct_resource_manager_afc8dc26b9daeea53f9d062391d92970a}\label{struct_resource_manager_afc8dc26b9daeea53f9d062391d92970a} 
+\index{ResourceManager@{ResourceManager}!LoadTexture@{LoadTexture}}
+\index{LoadTexture@{LoadTexture}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{LoadTexture()}{LoadTexture()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ SDL\+\_\+\+Texture $>$ Resource\+Manager\+::\+Load\+Texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer,  }\item[{std\+::string}]{filepath }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Loads a Texture given a filepath. Creates a new Texture if it hasn\textquotesingle{}t been loaded in prior. Otherwise, pulls from its list of loaded textures.
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & -- The renderer rendering everything. \\
+\hline
+{\em filepath} & -- the given filepath of the texture to be returned. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_resource_manager_afc8dc26b9daeea53f9d062391d92970a_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_resource_manager_8hpp}{Resource\+Manager.\+hpp}}\end{DoxyCompactItemize}

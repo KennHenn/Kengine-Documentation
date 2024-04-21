@@ -1,0 +1,11 @@
+<map id="GuiHandler" name="GuiHandler">
+<area shape="rect" id="Node000001" title=" " alt="" coords="65,821,241,1083"/>
+<area shape="rect" id="Node000002" href="$class_scene.html" title=" " alt="" coords="72,219,233,757"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,757,155,804,150,804,150,757"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,13,52,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="36,82,57,194,70,241,65,242,52,195,30,83"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="83,5,223,91"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="155,90,155,202,150,202,150,90"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="247,13,413,83"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="319,84,242,274,237,272,314,82"/>
+</map>

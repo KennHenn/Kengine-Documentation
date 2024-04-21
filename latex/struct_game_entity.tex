@@ -1,0 +1,464 @@
+\doxysection{Game\+Entity Struct Reference}
+\hypertarget{struct_game_entity}{}\label{struct_game_entity}\index{GameEntity@{GameEntity}}
+
+
+{\ttfamily \#include $<$Game\+Entity.\+hpp$>$}
+
+
+
+Inheritance diagram for Game\+Entity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{struct_game_entity__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\+Entity\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_game_entity__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_game_entity_a43e4841110c2de7e207d25cd31573616}{Game\+Entity}} ()
+\item 
+virtual \mbox{\hyperlink{struct_game_entity_a65c3157821d08e33a2377adce8e6ca8c}{\texorpdfstring{$\sim$}{\string~}\+Game\+Entity}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_game_entity}{Game\+Entity}} $>$ \mbox{\hyperlink{struct_game_entity_a7946bc022c5679c01dd20f12b117651e}{Get\+This\+Ptr}} ()
+\item 
+virtual void \mbox{\hyperlink{struct_game_entity_ac96ebd05e754e25fb1c4e99c17dd9f53}{Input}} ()
+\item 
+virtual void \mbox{\hyperlink{struct_game_entity_ab85fd4972b8c95ebad74167a3beaf803}{Update}} ()
+\item 
+virtual void \mbox{\hyperlink{struct_game_entity_aeeb078574108d4285438e21c12403ab6}{Render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{struct_game_entity_af9434f110d4102c3b2cf69b615698138}{Add\+Component}} (std\+::shared\+\_\+ptr$<$ T $>$ c)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{struct_game_entity_a909d6f1466f185980ac418a76bc5f133}{Get\+Component}} (\mbox{\hyperlink{_component_type_8hpp_a179460a59015cda603e42e8a71d6e043}{Component\+Type}} \mbox{\hyperlink{struct_game_entity_adc6ad96c5abcc9fc77bab52d80dbb6c0}{type}})
+\item 
+void \mbox{\hyperlink{struct_game_entity_a798a630f994e8dcb2259b4e4b6ee08e2}{Add\+Default\+Transform}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_transform_component}{Transform\+Component}} $>$ \mbox{\hyperlink{struct_game_entity_a6eb050e651a68dd7fe17ad85f0066397}{Get\+Transform}} ()
+\item 
+void \mbox{\hyperlink{struct_game_entity_af70aeee767494295ab65288e7b2e85fa}{Set\+Renderable}} (bool value)
+\item 
+bool \mbox{\hyperlink{struct_game_entity_aaa8c950dc85696d1902a497cc00d72de}{Is\+Renderable}} () const
+\item 
+bool \mbox{\hyperlink{struct_game_entity_af38de031054957f3a8787ac2ed4b1d55}{Intersects}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_game_entity}{Game\+Entity}} $>$ e)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_game_entity_a19037d0d4c617c92270c0dd7c25e7c81}{Get\+Name}} ()
+\item 
+void \mbox{\hyperlink{struct_game_entity_a27fc9ed67b8672a20e9b763a954c88e7}{Set\+Name}} (char \texorpdfstring{$\ast$}{*}n)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_game_entity_a5305109c53cc21ffa8f7874d8a14a745}{Get\+Temp\+Name}} ()
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_game_entity_a241e412ef838fcfdd296bc622aa0a47f}{Get\+Type}} ()
+\item 
+void \mbox{\hyperlink{struct_game_entity_aa9725522ca63fc9495c859b61b18fde9}{Set\+Type}} (char \texorpdfstring{$\ast$}{*}t)
+\item 
+float \mbox{\hyperlink{struct_game_entity_a43635de5cf70c5832ec54d174bfc350c}{Get\+Speed}} ()
+\item 
+void \mbox{\hyperlink{struct_game_entity_af3adc7cf6ec9a9f1deeda7a3c9bf1fb1}{Set\+Speed}} (float s)
+\item 
+float \mbox{\hyperlink{struct_game_entity_a8de7e7ee9d042ea458f4d8871e2230da}{Get\+XDir}} ()
+\item 
+float \mbox{\hyperlink{struct_game_entity_a4adcca04a8c8e960ee92b383c3e175e7}{Get\+YDir}} ()
+\item 
+void \mbox{\hyperlink{struct_game_entity_a51b7cd001db950d2f54062be01044b6d}{Set\+XDir}} (float x)
+\item 
+void \mbox{\hyperlink{struct_game_entity_a628f448d27c50e634f8a57b0f33b8cd5}{Set\+YDir}} (float y)
+\item 
+void \mbox{\hyperlink{struct_game_entity_a113f0ea1296ede52f9ba29053dfdaf37}{Set\+XYDir}} (float x, float y)
+\item 
+void \mbox{\hyperlink{struct_game_entity_a5ff6a1ed61da02b2a4f32e3d4e8a33e9}{Set\+Subtype}} (char \texorpdfstring{$\ast$}{*}t)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_game_entity_a9af0c58c29db15541f0cf39a4ea0236e}{Get\+Subtype}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_game_entity_ad6e833708c24b6f4bc1e6c7eb9620dc5}{name}}
+\begin{DoxyCompactList}\small\item\em The current name of this Game Entity (affected by GUI changes). \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_game_entity_a06dcee7117ea445f5534bb8d36e85d87}{temp\+Name}}
+\begin{DoxyCompactList}\small\item\em The active name of this Game Entity (unaffected by GUI changes). \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_game_entity_adc6ad96c5abcc9fc77bab52d80dbb6c0}{type}}
+\begin{DoxyCompactList}\small\item\em The Type of this Game Entity (i.\+e. Player, Ball, Death, etc.) \end{DoxyCompactList}\item 
+std\+::map$<$ \mbox{\hyperlink{_component_type_8hpp_a179460a59015cda603e42e8a71d6e043}{Component\+Type}}, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_component}{Component}} $>$ $>$ \mbox{\hyperlink{struct_game_entity_a26bba98c4d0b3c0df5d02e0d91a9a9a1}{m\+Components}}
+\begin{DoxyCompactList}\small\item\em The list of this Game Entity\textquotesingle{}s Components. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{struct_game_entity_ae80957b6b6fe6027be39debf98a27d46}{m\+Speed}}
+\begin{DoxyCompactList}\small\item\em The Speed of this Game Entity. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{struct_game_entity_acfa046ecf7e69997ab50ff52873f3bb8}{x\+Dir}}
+\begin{DoxyCompactList}\small\item\em The X Directional Magnitude of this Game Entity. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{struct_game_entity_af4ef758611b1e01de8fe14f118b6bc8b}{y\+Dir}}
+\begin{DoxyCompactList}\small\item\em The Y Directional Magnitude of this Game Entity. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_game_entity_aa303a013183fab491732c565868f26ff}{subtype}}
+\begin{DoxyCompactList}\small\item\em The subtype of this Game Entity. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_game_entity_a22d3bbec17b0b7ae485c40f925327ece}{m\+Renderable}} \{true\}
+\begin{DoxyCompactList}\small\item\em Whether or not this Game Entity is renderable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a Game Entity or a Game Object in our \doxylink{class_scene}{Scene}. Holds Information through components. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_game_entity_a43e4841110c2de7e207d25cd31573616}\label{struct_game_entity_a43e4841110c2de7e207d25cd31573616} 
+\index{GameEntity@{GameEntity}!GameEntity@{GameEntity}}
+\index{GameEntity@{GameEntity}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{GameEntity()}{GameEntity()}}
+{\footnotesize\ttfamily Game\+Entity\+::\+Game\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor for this Game Entity \Hypertarget{struct_game_entity_a65c3157821d08e33a2377adce8e6ca8c}\label{struct_game_entity_a65c3157821d08e33a2377adce8e6ca8c} 
+\index{GameEntity@{GameEntity}!````~GameEntity@{\texorpdfstring{$\sim$}{\string~}GameEntity}}
+\index{````~GameEntity@{\texorpdfstring{$\sim$}{\string~}GameEntity}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}GameEntity()}{\string~GameEntity()}}
+{\footnotesize\ttfamily virtual Game\+Entity\+::\texorpdfstring{$\sim$}{\string~}\+Game\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor for this Game Entity 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_game_entity_af9434f110d4102c3b2cf69b615698138}\label{struct_game_entity_af9434f110d4102c3b2cf69b615698138} 
+\index{GameEntity@{GameEntity}!AddComponent@{AddComponent}}
+\index{AddComponent@{AddComponent}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{AddComponent()}{AddComponent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Game\+Entity\+::\+Add\+Component (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ T $>$}]{c }\end{DoxyParamCaption})}
+
+Adds a \doxylink{struct_component}{Component} of type T to this Game Entity\textquotesingle{}s list of Components.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & -- the type T of \doxylink{struct_component}{Component} to add. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_game_entity_a798a630f994e8dcb2259b4e4b6ee08e2}\label{struct_game_entity_a798a630f994e8dcb2259b4e4b6ee08e2} 
+\index{GameEntity@{GameEntity}!AddDefaultTransform@{AddDefaultTransform}}
+\index{AddDefaultTransform@{AddDefaultTransform}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{AddDefaultTransform()}{AddDefaultTransform()}}
+{\footnotesize\ttfamily void Game\+Entity\+::\+Add\+Default\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Adds a Default Transform \doxylink{struct_component}{Component} to this Game Entity. \Hypertarget{struct_game_entity_a909d6f1466f185980ac418a76bc5f133}\label{struct_game_entity_a909d6f1466f185980ac418a76bc5f133} 
+\index{GameEntity@{GameEntity}!GetComponent@{GetComponent}}
+\index{GetComponent@{GetComponent}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{GetComponent()}{GetComponent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::shared\+\_\+ptr$<$ T $>$ Game\+Entity\+::\+Get\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_component_type_8hpp_a179460a59015cda603e42e8a71d6e043}{Component\+Type}}}]{type }\end{DoxyParamCaption})}
+
+Gets a \doxylink{struct_component}{Component} of type T from this Game Entity\textquotesingle{}s list of Components.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & -- the Component\+Type to get. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_game_entity_a19037d0d4c617c92270c0dd7c25e7c81}\label{struct_game_entity_a19037d0d4c617c92270c0dd7c25e7c81} 
+\index{GameEntity@{GameEntity}!GetName@{GetName}}
+\index{GetName@{GetName}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} Game\+Entity\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the Name of this Game Entity. \Hypertarget{struct_game_entity_a43635de5cf70c5832ec54d174bfc350c}\label{struct_game_entity_a43635de5cf70c5832ec54d174bfc350c} 
+\index{GameEntity@{GameEntity}!GetSpeed@{GetSpeed}}
+\index{GetSpeed@{GetSpeed}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{GetSpeed()}{GetSpeed()}}
+{\footnotesize\ttfamily float Game\+Entity\+::\+Get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns this Game Entity\textquotesingle{}s speed. \Hypertarget{struct_game_entity_a9af0c58c29db15541f0cf39a4ea0236e}\label{struct_game_entity_a9af0c58c29db15541f0cf39a4ea0236e} 
+\index{GameEntity@{GameEntity}!GetSubtype@{GetSubtype}}
+\index{GetSubtype@{GetSubtype}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{GetSubtype()}{GetSubtype()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} Game\+Entity\+::\+Get\+Subtype (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns this Game Entity\textquotesingle{}s Subtype. (i.\+e. if the Game Entity is a Block, it may have subtype Blue, or Normal, etc.) \Hypertarget{struct_game_entity_a5305109c53cc21ffa8f7874d8a14a745}\label{struct_game_entity_a5305109c53cc21ffa8f7874d8a14a745} 
+\index{GameEntity@{GameEntity}!GetTempName@{GetTempName}}
+\index{GetTempName@{GetTempName}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{GetTempName()}{GetTempName()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} Game\+Entity\+::\+Get\+Temp\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the temporary name of this Game Entity (if the user edited the name but didn\textquotesingle{}t update). \Hypertarget{struct_game_entity_a7946bc022c5679c01dd20f12b117651e}\label{struct_game_entity_a7946bc022c5679c01dd20f12b117651e} 
+\index{GameEntity@{GameEntity}!GetThisPtr@{GetThisPtr}}
+\index{GetThisPtr@{GetThisPtr}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{GetThisPtr()}{GetThisPtr()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_game_entity}{Game\+Entity}} $>$ Game\+Entity\+::\+Get\+This\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a Shared Pointer that points to this Game Entity. \Hypertarget{struct_game_entity_a6eb050e651a68dd7fe17ad85f0066397}\label{struct_game_entity_a6eb050e651a68dd7fe17ad85f0066397} 
+\index{GameEntity@{GameEntity}!GetTransform@{GetTransform}}
+\index{GetTransform@{GetTransform}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{GetTransform()}{GetTransform()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_transform_component}{Transform\+Component}} $>$ Game\+Entity\+::\+Get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the Transform \doxylink{struct_component}{Component} from this Game Entity. \Hypertarget{struct_game_entity_a241e412ef838fcfdd296bc622aa0a47f}\label{struct_game_entity_a241e412ef838fcfdd296bc622aa0a47f} 
+\index{GameEntity@{GameEntity}!GetType@{GetType}}
+\index{GetType@{GetType}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} Game\+Entity\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns this Game Entity\textquotesingle{}s type (i.\+e. Ball, Death, Block, etc.) \Hypertarget{struct_game_entity_a8de7e7ee9d042ea458f4d8871e2230da}\label{struct_game_entity_a8de7e7ee9d042ea458f4d8871e2230da} 
+\index{GameEntity@{GameEntity}!GetXDir@{GetXDir}}
+\index{GetXDir@{GetXDir}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{GetXDir()}{GetXDir()}}
+{\footnotesize\ttfamily float Game\+Entity\+::\+Get\+XDir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns this Game Entity\textquotesingle{}s X Directional Magnitude. (Always between -\/1.\+0f and 1.\+0f). \Hypertarget{struct_game_entity_a4adcca04a8c8e960ee92b383c3e175e7}\label{struct_game_entity_a4adcca04a8c8e960ee92b383c3e175e7} 
+\index{GameEntity@{GameEntity}!GetYDir@{GetYDir}}
+\index{GetYDir@{GetYDir}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{GetYDir()}{GetYDir()}}
+{\footnotesize\ttfamily float Game\+Entity\+::\+Get\+YDir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns this Game Entity\textquotesingle{}s Y Directional Magnitude. (Always between -\/1.\+0f and 1.\+0f). \Hypertarget{struct_game_entity_ac96ebd05e754e25fb1c4e99c17dd9f53}\label{struct_game_entity_ac96ebd05e754e25fb1c4e99c17dd9f53} 
+\index{GameEntity@{GameEntity}!Input@{Input}}
+\index{Input@{Input}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily virtual void Game\+Entity\+::\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The Input portion of the Game Loop. Calls Input on its Components. \Hypertarget{struct_game_entity_af38de031054957f3a8787ac2ed4b1d55}\label{struct_game_entity_af38de031054957f3a8787ac2ed4b1d55} 
+\index{GameEntity@{GameEntity}!Intersects@{Intersects}}
+\index{Intersects@{Intersects}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{Intersects()}{Intersects()}}
+{\footnotesize\ttfamily bool Game\+Entity\+::\+Intersects (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_game_entity}{Game\+Entity}} $>$}]{e }\end{DoxyParamCaption})}
+
+Returns whether or not this Game Entity is currently overlapping with the given other Game Entity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & -- the other Game Entity we\textquotesingle{}re checking for overlap with. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_game_entity_aaa8c950dc85696d1902a497cc00d72de}\label{struct_game_entity_aaa8c950dc85696d1902a497cc00d72de} 
+\index{GameEntity@{GameEntity}!IsRenderable@{IsRenderable}}
+\index{IsRenderable@{IsRenderable}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{IsRenderable()}{IsRenderable()}}
+{\footnotesize\ttfamily bool Game\+Entity\+::\+Is\+Renderable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns whether or not this Game Entity is currently Renderable. \Hypertarget{struct_game_entity_aeeb078574108d4285438e21c12403ab6}\label{struct_game_entity_aeeb078574108d4285438e21c12403ab6} 
+\index{GameEntity@{GameEntity}!Render@{Render}}
+\index{Render@{Render}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Game\+Entity\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The Render portion of the Game Loop. Calls Render on its Components.
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & -- the renderer rendering everything. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_game_entity_a27fc9ed67b8672a20e9b763a954c88e7}\label{struct_game_entity_a27fc9ed67b8672a20e9b763a954c88e7} 
+\index{GameEntity@{GameEntity}!SetName@{SetName}}
+\index{SetName@{SetName}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{SetName()}{SetName()}}
+{\footnotesize\ttfamily void Game\+Entity\+::\+Set\+Name (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{n }\end{DoxyParamCaption})}
+
+Sets the Name of this Game Entity to the given name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & -- the name we\textquotesingle{}re updating this Game Entity\textquotesingle{}s name to. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_game_entity_af70aeee767494295ab65288e7b2e85fa}\label{struct_game_entity_af70aeee767494295ab65288e7b2e85fa} 
+\index{GameEntity@{GameEntity}!SetRenderable@{SetRenderable}}
+\index{SetRenderable@{SetRenderable}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{SetRenderable()}{SetRenderable()}}
+{\footnotesize\ttfamily void Game\+Entity\+::\+Set\+Renderable (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})}
+
+Sets this Game Entity to Renderable or Not Renderable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & -- the boolean of which we set Renderable to. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_game_entity_af3adc7cf6ec9a9f1deeda7a3c9bf1fb1}\label{struct_game_entity_af3adc7cf6ec9a9f1deeda7a3c9bf1fb1} 
+\index{GameEntity@{GameEntity}!SetSpeed@{SetSpeed}}
+\index{SetSpeed@{SetSpeed}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{SetSpeed()}{SetSpeed()}}
+{\footnotesize\ttfamily void Game\+Entity\+::\+Set\+Speed (\begin{DoxyParamCaption}\item[{float}]{s }\end{DoxyParamCaption})}
+
+Updates this Game Entity\textquotesingle{}s Speed to the given speed value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & -- the new float value we\textquotesingle{}re updating this Game Entity\textquotesingle{}s speed to. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_game_entity_a5ff6a1ed61da02b2a4f32e3d4e8a33e9}\label{struct_game_entity_a5ff6a1ed61da02b2a4f32e3d4e8a33e9} 
+\index{GameEntity@{GameEntity}!SetSubtype@{SetSubtype}}
+\index{SetSubtype@{SetSubtype}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{SetSubtype()}{SetSubtype()}}
+{\footnotesize\ttfamily void Game\+Entity\+::\+Set\+Subtype (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{t }\end{DoxyParamCaption})}
+
+Updates this Game Entity\textquotesingle{}s Subtype to the given subtype.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & -- the new subtype. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_game_entity_aa9725522ca63fc9495c859b61b18fde9}\label{struct_game_entity_aa9725522ca63fc9495c859b61b18fde9} 
+\index{GameEntity@{GameEntity}!SetType@{SetType}}
+\index{SetType@{SetType}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{SetType()}{SetType()}}
+{\footnotesize\ttfamily void Game\+Entity\+::\+Set\+Type (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{t }\end{DoxyParamCaption})}
+
+Updates this Game Entity\textquotesingle{}s type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & -- the new type of this Game Entity. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_game_entity_a51b7cd001db950d2f54062be01044b6d}\label{struct_game_entity_a51b7cd001db950d2f54062be01044b6d} 
+\index{GameEntity@{GameEntity}!SetXDir@{SetXDir}}
+\index{SetXDir@{SetXDir}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{SetXDir()}{SetXDir()}}
+{\footnotesize\ttfamily void Game\+Entity\+::\+Set\+XDir (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
+
+Updates this Game Entity\textquotesingle{}s X Directional Magnitude to the given directional magnitude value. (Always between -\/1.\+0f and 1.\+0f).
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -- the float value to update the x directional magnitude value to. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_game_entity_a113f0ea1296ede52f9ba29053dfdaf37}\label{struct_game_entity_a113f0ea1296ede52f9ba29053dfdaf37} 
+\index{GameEntity@{GameEntity}!SetXYDir@{SetXYDir}}
+\index{SetXYDir@{SetXYDir}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{SetXYDir()}{SetXYDir()}}
+{\footnotesize\ttfamily void Game\+Entity\+::\+Set\+XYDir (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+Updates this Game Entity\textquotesingle{}s X and Y Directional Magnitudes to the given directional magnitude values. (Always between -\/1.\+0f and 1.\+0f).
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -- the float value to update the x directional magnitude value to. \\
+\hline
+{\em y} & -- the float value to update the y directional magnitude value to. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_game_entity_a628f448d27c50e634f8a57b0f33b8cd5}\label{struct_game_entity_a628f448d27c50e634f8a57b0f33b8cd5} 
+\index{GameEntity@{GameEntity}!SetYDir@{SetYDir}}
+\index{SetYDir@{SetYDir}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{SetYDir()}{SetYDir()}}
+{\footnotesize\ttfamily void Game\+Entity\+::\+Set\+YDir (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
+
+Updates this Game Entity\textquotesingle{}s Y Directional Magnitude to the given directional magnitude value. (Always between -\/1.\+0f and 1.\+0f).
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & -- the float value to update the y directional magnitude value to. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_game_entity_ab85fd4972b8c95ebad74167a3beaf803}\label{struct_game_entity_ab85fd4972b8c95ebad74167a3beaf803} 
+\index{GameEntity@{GameEntity}!Update@{Update}}
+\index{Update@{Update}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void Game\+Entity\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The Update portion of the Game Loop. Calls Update on its Components. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_game_entity_a26bba98c4d0b3c0df5d02e0d91a9a9a1}\label{struct_game_entity_a26bba98c4d0b3c0df5d02e0d91a9a9a1} 
+\index{GameEntity@{GameEntity}!mComponents@{mComponents}}
+\index{mComponents@{mComponents}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{mComponents}{mComponents}}
+{\footnotesize\ttfamily std\+::map$<$\mbox{\hyperlink{_component_type_8hpp_a179460a59015cda603e42e8a71d6e043}{Component\+Type}}, std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{struct_component}{Component}}$>$ $>$ Game\+Entity\+::m\+Components}
+
+
+
+The list of this Game Entity\textquotesingle{}s Components. 
+
+\Hypertarget{struct_game_entity_a22d3bbec17b0b7ae485c40f925327ece}\label{struct_game_entity_a22d3bbec17b0b7ae485c40f925327ece} 
+\index{GameEntity@{GameEntity}!mRenderable@{mRenderable}}
+\index{mRenderable@{mRenderable}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{mRenderable}{mRenderable}}
+{\footnotesize\ttfamily bool Game\+Entity\+::m\+Renderable \{true\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Whether or not this Game Entity is renderable. 
+
+\Hypertarget{struct_game_entity_ae80957b6b6fe6027be39debf98a27d46}\label{struct_game_entity_ae80957b6b6fe6027be39debf98a27d46} 
+\index{GameEntity@{GameEntity}!mSpeed@{mSpeed}}
+\index{mSpeed@{mSpeed}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{mSpeed}{mSpeed}}
+{\footnotesize\ttfamily float Game\+Entity\+::m\+Speed\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The Speed of this Game Entity. 
+
+\Hypertarget{struct_game_entity_ad6e833708c24b6f4bc1e6c7eb9620dc5}\label{struct_game_entity_ad6e833708c24b6f4bc1e6c7eb9620dc5} 
+\index{GameEntity@{GameEntity}!name@{name}}
+\index{name@{name}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily char\texorpdfstring{$\ast$}{*} Game\+Entity\+::name}
+
+
+
+The current name of this Game Entity (affected by GUI changes). 
+
+\Hypertarget{struct_game_entity_aa303a013183fab491732c565868f26ff}\label{struct_game_entity_aa303a013183fab491732c565868f26ff} 
+\index{GameEntity@{GameEntity}!subtype@{subtype}}
+\index{subtype@{subtype}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{subtype}{subtype}}
+{\footnotesize\ttfamily char\texorpdfstring{$\ast$}{*} Game\+Entity\+::subtype\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The subtype of this Game Entity. 
+
+\Hypertarget{struct_game_entity_a06dcee7117ea445f5534bb8d36e85d87}\label{struct_game_entity_a06dcee7117ea445f5534bb8d36e85d87} 
+\index{GameEntity@{GameEntity}!tempName@{tempName}}
+\index{tempName@{tempName}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{tempName}{tempName}}
+{\footnotesize\ttfamily char\texorpdfstring{$\ast$}{*} Game\+Entity\+::temp\+Name}
+
+
+
+The active name of this Game Entity (unaffected by GUI changes). 
+
+\Hypertarget{struct_game_entity_adc6ad96c5abcc9fc77bab52d80dbb6c0}\label{struct_game_entity_adc6ad96c5abcc9fc77bab52d80dbb6c0} 
+\index{GameEntity@{GameEntity}!type@{type}}
+\index{type@{type}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily char\texorpdfstring{$\ast$}{*} Game\+Entity\+::type}
+
+
+
+The Type of this Game Entity (i.\+e. Player, Ball, Death, etc.) 
+
+\Hypertarget{struct_game_entity_acfa046ecf7e69997ab50ff52873f3bb8}\label{struct_game_entity_acfa046ecf7e69997ab50ff52873f3bb8} 
+\index{GameEntity@{GameEntity}!xDir@{xDir}}
+\index{xDir@{xDir}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{xDir}{xDir}}
+{\footnotesize\ttfamily float Game\+Entity\+::x\+Dir\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The X Directional Magnitude of this Game Entity. 
+
+\Hypertarget{struct_game_entity_af4ef758611b1e01de8fe14f118b6bc8b}\label{struct_game_entity_af4ef758611b1e01de8fe14f118b6bc8b} 
+\index{GameEntity@{GameEntity}!yDir@{yDir}}
+\index{yDir@{yDir}!GameEntity@{GameEntity}}
+\doxysubsubsection{\texorpdfstring{yDir}{yDir}}
+{\footnotesize\ttfamily float Game\+Entity\+::y\+Dir\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The Y Directional Magnitude of this Game Entity. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_game_entity_8hpp}{Game\+Entity.\+hpp}}\end{DoxyCompactItemize}

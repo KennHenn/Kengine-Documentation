@@ -1,0 +1,9 @@
+<map id="TransformComponent" name="TransformComponent">
+<area shape="rect" id="Node000001" title=" " alt="" coords="110,288,273,699"/>
+<area shape="rect" id="Node000002" href="$struct_component.html" title=" " alt="" coords="5,5,127,224"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,237,126,287,121,289,104,239"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="151,80,231,149"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,149,194,271,189,271,189,149"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="285,80,322,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="301,150,277,265,274,272,269,271,271,263,296,149"/>
+</map>

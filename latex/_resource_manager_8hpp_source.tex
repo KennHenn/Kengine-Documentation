@@ -1,0 +1,60 @@
+\doxysection{Resource\+Manager.\+hpp}
+\hypertarget{_resource_manager_8hpp_source}{}\label{_resource_manager_8hpp_source}\index{include/ResourceManager.hpp@{include/ResourceManager.hpp}}
+\mbox{\hyperlink{_resource_manager_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ ResourceManager.hpp}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <SDL3/SDL.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_texture_functor_deleter}{TextureFunctorDeleter}}\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_texture_functor_deleter_a517cc26cc405808a25c4d3255813fa2f}{operator()}}(SDL\_Texture*\ texture)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ SDL\_DestroyTexture(texture);}
+\DoxyCodeLine{00014\ \ \ \ \ \}}
+\DoxyCodeLine{00015\ \};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00023\ std::shared\_ptr<SDL\_Texture>\ \mbox{\hyperlink{_resource_manager_8hpp_aa68b14d4ed8455460b3579ef4503d106}{make\_shared\_texture}}(SDL\_Renderer*\ renderer,\ SDL\_Surface*\ pixels);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_resource_manager}{ResourceManager}}\ \{\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_resource_manager}{ResourceManager}}\&\ \mbox{\hyperlink{struct_resource_manager_a48cd1c56c64af260a6ddb5fbd4daae54}{Instance}}()\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{nullptr}\ ==\ mInstance)\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ mInstance\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{struct_resource_manager}{ResourceManager}};}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *mInstance;}
+\DoxyCodeLine{00039\ \ \ \ \ \}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00049\ \ \ \ \ std::shared\_ptr<SDL\_Texture>\ \mbox{\hyperlink{struct_resource_manager_afc8dc26b9daeea53f9d062391d92970a}{LoadTexture}}\ (SDL\_Renderer*\ renderer,\ std::string\ filepath)\ \{}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!mTextureResources.contains(filepath))\ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SDL\_Surface*\ pixels\ =\ SDL\_LoadBMP(filepath.c\_str());}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SDL\_SetSurfaceColorKey(pixels,SDL\_TRUE,SDL\_MapRGB(pixels-\/>format,0xFF,0,0xFF));\ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<SDL\_Texture>\ texture\ =\ \mbox{\hyperlink{_resource_manager_8hpp_aa68b14d4ed8455460b3579ef4503d106}{make\_shared\_texture}}(renderer,\ pixels);\ \ \ \ }
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Insert\ into\ our\ map}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ mTextureResources.insert(\{filepath,\ texture\});}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SDL\_DestroySurface(pixels);}
+\DoxyCodeLine{00062\ \ \ \ \ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \}\ \ \ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ mTextureResources[filepath];}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00067\ \ \ \ \ \}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_resource_manager}{ResourceManager}}()\ \{}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_resource_manager}{ResourceManager}}*\ mInstance\ \{\textcolor{keyword}{nullptr}\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ std::unordered\_map<std::string,\ std::shared\_ptr<SDL\_Texture>>\ mTextureResources;\ \ \ \ }
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \};}
+
+\end{DoxyCode}

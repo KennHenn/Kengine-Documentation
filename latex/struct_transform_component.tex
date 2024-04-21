@@ -1,0 +1,284 @@
+\doxysection{Transform\+Component Struct Reference}
+\hypertarget{struct_transform_component}{}\label{struct_transform_component}\index{TransformComponent@{TransformComponent}}
+
+
+{\ttfamily \#include $<$Transform\+Component.\+hpp$>$}
+
+
+
+Inheritance diagram for Transform\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{struct_transform_component__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Transform\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{struct_transform_component__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_transform_component_ace1cf2d7d2a7468e9cb3eb0ce382f446}{Transform\+Component}} ()
+\item 
+\mbox{\hyperlink{struct_transform_component_a37d5d34a3695eafc8b8cbf37905e756f}{\texorpdfstring{$\sim$}{\string~}\+Transform\+Component}} ()
+\item 
+void \mbox{\hyperlink{struct_transform_component_a6907dcd19f86f1faa4af54cceadc4391}{Input}} () override
+\item 
+void \mbox{\hyperlink{struct_transform_component_a4532abc14d19b4d80853d0e5648eb433}{Update}} () override
+\item 
+void \mbox{\hyperlink{struct_transform_component_a78eedf13d70917145f2cb613509c14c1}{Render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer) override
+\item 
+\mbox{\hyperlink{_component_type_8hpp_a179460a59015cda603e42e8a71d6e043}{Component\+Type}} \mbox{\hyperlink{struct_transform_component_a4d30c255d54af02fc53774412b488014}{Get\+Type}} () override
+\item 
+void \mbox{\hyperlink{struct_transform_component_ad0ec4d225535f56ab1a0aa942d7f006b}{SetW}} (float w)
+\item 
+void \mbox{\hyperlink{struct_transform_component_a18d77f1e7dd0eae8f011f538560a91f0}{SetH}} (float h)
+\item 
+void \mbox{\hyperlink{struct_transform_component_a198f76af633557e85027771f60867432}{Set\+WH}} (float w, float h)
+\item 
+void \mbox{\hyperlink{struct_transform_component_a8052d38b75f03094e781481212878589}{SetX}} (float x)
+\item 
+void \mbox{\hyperlink{struct_transform_component_ab7df147cf1e48361aec3f96573278a09}{SetY}} (float y)
+\item 
+void \mbox{\hyperlink{struct_transform_component_a1977fcd1d8cd835aea71651f18cc9ea4}{Set\+XY}} (float x, float y)
+\item 
+float \mbox{\hyperlink{struct_transform_component_a7260ce3bc9ef172d4a57a482c2b209ad}{GetX}} () const
+\item 
+float \mbox{\hyperlink{struct_transform_component_ae02c8d6e718fdcc01065b228bbcdb10d}{GetY}} () const
+\item 
+float \mbox{\hyperlink{struct_transform_component_ae5501067c1a954f5ed3b0cf75aadff20}{GetW}} () const
+\item 
+float \mbox{\hyperlink{struct_transform_component_aec4ba1c40d8071ff463a2a697c2984d6}{GetH}} () const
+\item 
+SDL\+\_\+\+FRect \mbox{\hyperlink{struct_transform_component_a992e0cbffe237badd34641f1e82cb1b2}{Get\+Rectangle}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{struct_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}} ()
+\item 
+virtual \mbox{\hyperlink{struct_component_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\item 
+void \mbox{\hyperlink{struct_component_a92fc19214ae6a73ee22824d85d1a1b99}{Set\+Game\+Entity}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_game_entity}{Game\+Entity}} $>$ g)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_game_entity}{Game\+Entity}} $>$ \mbox{\hyperlink{struct_component_ad1000f79fe140ee4cc90d0b23cd6c035}{Get\+Game\+Entity}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+SDL\+\_\+\+FRect \mbox{\hyperlink{struct_transform_component_a8631866a05e24bcf99b80e5a8b6e3eaa}{m\+Rectangle}} \{20.\+0f,20.\+0f,32.\+0f,32.\+0f\}
+\begin{DoxyCompactList}\small\item\em The Rectangle of this Transform. Has postion and scale. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_transform_component_a7c2d8fa95cdfabc1c08fe6c97bf40523}{is\+Cursor}} = false
+\begin{DoxyCompactList}\small\item\em Whether or not this Transform is the Box Cursor or not. ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a \doxylink{struct_component}{Component} for handling a Game Entity\textquotesingle{}s Transform (positon, scale, etc.) 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_transform_component_ace1cf2d7d2a7468e9cb3eb0ce382f446}\label{struct_transform_component_ace1cf2d7d2a7468e9cb3eb0ce382f446} 
+\index{TransformComponent@{TransformComponent}!TransformComponent@{TransformComponent}}
+\index{TransformComponent@{TransformComponent}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{TransformComponent()}{TransformComponent()}}
+{\footnotesize\ttfamily Transform\+Component\+::\+Transform\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This \doxylink{struct_transform_component}{Transform\+Component}\textquotesingle{}s Constructor. \Hypertarget{struct_transform_component_a37d5d34a3695eafc8b8cbf37905e756f}\label{struct_transform_component_a37d5d34a3695eafc8b8cbf37905e756f} 
+\index{TransformComponent@{TransformComponent}!````~TransformComponent@{\texorpdfstring{$\sim$}{\string~}TransformComponent}}
+\index{````~TransformComponent@{\texorpdfstring{$\sim$}{\string~}TransformComponent}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}TransformComponent()}{\string~TransformComponent()}}
+{\footnotesize\ttfamily Transform\+Component\+::\texorpdfstring{$\sim$}{\string~}\+Transform\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This Transform \doxylink{struct_component}{Component}\textquotesingle{}s Destructor. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_transform_component_aec4ba1c40d8071ff463a2a697c2984d6}\label{struct_transform_component_aec4ba1c40d8071ff463a2a697c2984d6} 
+\index{TransformComponent@{TransformComponent}!GetH@{GetH}}
+\index{GetH@{GetH}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{GetH()}{GetH()}}
+{\footnotesize\ttfamily float Transform\+Component\+::\+GetH (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the Height of the transfrom. \Hypertarget{struct_transform_component_a992e0cbffe237badd34641f1e82cb1b2}\label{struct_transform_component_a992e0cbffe237badd34641f1e82cb1b2} 
+\index{TransformComponent@{TransformComponent}!GetRectangle@{GetRectangle}}
+\index{GetRectangle@{GetRectangle}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{GetRectangle()}{GetRectangle()}}
+{\footnotesize\ttfamily SDL\+\_\+\+FRect Transform\+Component\+::\+Get\+Rectangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets Transform\textquotesingle{}s Rectangle. \Hypertarget{struct_transform_component_a4d30c255d54af02fc53774412b488014}\label{struct_transform_component_a4d30c255d54af02fc53774412b488014} 
+\index{TransformComponent@{TransformComponent}!GetType@{GetType}}
+\index{GetType@{GetType}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_component_type_8hpp_a179460a59015cda603e42e8a71d6e043}{Component\+Type}} Transform\+Component\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns the Component\+Type (\doxylink{struct_transform_component}{Transform\+Component}) of this \doxylink{struct_transform_component}{Transform\+Component}. 
+
+Implements \mbox{\hyperlink{struct_component_a2e87d60cd7150786e51bfcda7129ed90}{Component}}.
+
+\Hypertarget{struct_transform_component_ae5501067c1a954f5ed3b0cf75aadff20}\label{struct_transform_component_ae5501067c1a954f5ed3b0cf75aadff20} 
+\index{TransformComponent@{TransformComponent}!GetW@{GetW}}
+\index{GetW@{GetW}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{GetW()}{GetW()}}
+{\footnotesize\ttfamily float Transform\+Component\+::\+GetW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the Width of the transfrom. \Hypertarget{struct_transform_component_a7260ce3bc9ef172d4a57a482c2b209ad}\label{struct_transform_component_a7260ce3bc9ef172d4a57a482c2b209ad} 
+\index{TransformComponent@{TransformComponent}!GetX@{GetX}}
+\index{GetX@{GetX}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{GetX()}{GetX()}}
+{\footnotesize\ttfamily float Transform\+Component\+::\+GetX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the X Value of the transfrom. \Hypertarget{struct_transform_component_ae02c8d6e718fdcc01065b228bbcdb10d}\label{struct_transform_component_ae02c8d6e718fdcc01065b228bbcdb10d} 
+\index{TransformComponent@{TransformComponent}!GetY@{GetY}}
+\index{GetY@{GetY}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{GetY()}{GetY()}}
+{\footnotesize\ttfamily float Transform\+Component\+::\+GetY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the Y Value of the transfrom. \Hypertarget{struct_transform_component_a6907dcd19f86f1faa4af54cceadc4391}\label{struct_transform_component_a6907dcd19f86f1faa4af54cceadc4391} 
+\index{TransformComponent@{TransformComponent}!Input@{Input}}
+\index{Input@{Input}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void Transform\+Component\+::\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The Input portion of the Game Loop. (Does nothing in \doxylink{struct_transform_component}{Transform\+Component}) 
+
+Reimplemented from \mbox{\hyperlink{struct_component_abba211bfa6a773487aa8d354a8138d9d}{Component}}.
+
+\Hypertarget{struct_transform_component_a78eedf13d70917145f2cb613509c14c1}\label{struct_transform_component_a78eedf13d70917145f2cb613509c14c1} 
+\index{TransformComponent@{TransformComponent}!Render@{Render}}
+\index{Render@{Render}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Transform\+Component\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The Render portion of the Game Loop. Renders the Box Cursor when the engine is in EDIT mode. 
+
+Reimplemented from \mbox{\hyperlink{struct_component_a223de42285cca9e02809120c1a44c4ac}{Component}}.
+
+\Hypertarget{struct_transform_component_a18d77f1e7dd0eae8f011f538560a91f0}\label{struct_transform_component_a18d77f1e7dd0eae8f011f538560a91f0} 
+\index{TransformComponent@{TransformComponent}!SetH@{SetH}}
+\index{SetH@{SetH}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{SetH()}{SetH()}}
+{\footnotesize\ttfamily void Transform\+Component\+::\+SetH (\begin{DoxyParamCaption}\item[{float}]{h }\end{DoxyParamCaption})}
+
+Sets the height of the transfrom to the given height.
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & -- the new height of the transform. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_transform_component_ad0ec4d225535f56ab1a0aa942d7f006b}\label{struct_transform_component_ad0ec4d225535f56ab1a0aa942d7f006b} 
+\index{TransformComponent@{TransformComponent}!SetW@{SetW}}
+\index{SetW@{SetW}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{SetW()}{SetW()}}
+{\footnotesize\ttfamily void Transform\+Component\+::\+SetW (\begin{DoxyParamCaption}\item[{float}]{w }\end{DoxyParamCaption})}
+
+Sets the width of the transfrom to the given width.
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & -- the new width of the transform. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_transform_component_a198f76af633557e85027771f60867432}\label{struct_transform_component_a198f76af633557e85027771f60867432} 
+\index{TransformComponent@{TransformComponent}!SetWH@{SetWH}}
+\index{SetWH@{SetWH}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{SetWH()}{SetWH()}}
+{\footnotesize\ttfamily void Transform\+Component\+::\+Set\+WH (\begin{DoxyParamCaption}\item[{float}]{w,  }\item[{float}]{h }\end{DoxyParamCaption})}
+
+Sets the width and height of the transfrom to the given width and height.
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & -- the new width of the transform. \\
+\hline
+{\em h} & -- the new height of the transform. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_transform_component_a8052d38b75f03094e781481212878589}\label{struct_transform_component_a8052d38b75f03094e781481212878589} 
+\index{TransformComponent@{TransformComponent}!SetX@{SetX}}
+\index{SetX@{SetX}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{SetX()}{SetX()}}
+{\footnotesize\ttfamily void Transform\+Component\+::\+SetX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})}
+
+Sets the X Position of the transfrom to the given X Value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -- the new X Value of the Transform. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_transform_component_a1977fcd1d8cd835aea71651f18cc9ea4}\label{struct_transform_component_a1977fcd1d8cd835aea71651f18cc9ea4} 
+\index{TransformComponent@{TransformComponent}!SetXY@{SetXY}}
+\index{SetXY@{SetXY}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{SetXY()}{SetXY()}}
+{\footnotesize\ttfamily void Transform\+Component\+::\+Set\+XY (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+Sets the X and Y Positions of the transfrom to the given X and Y Values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -- the new X Value of the Transform. \\
+\hline
+{\em y} & -- the new Y Value of the Transform. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_transform_component_ab7df147cf1e48361aec3f96573278a09}\label{struct_transform_component_ab7df147cf1e48361aec3f96573278a09} 
+\index{TransformComponent@{TransformComponent}!SetY@{SetY}}
+\index{SetY@{SetY}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{SetY()}{SetY()}}
+{\footnotesize\ttfamily void Transform\+Component\+::\+SetY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})}
+
+Sets the Y Position of the transfrom to the given Y Value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & -- the new Y Value of the Transform. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_transform_component_a4532abc14d19b4d80853d0e5648eb433}\label{struct_transform_component_a4532abc14d19b4d80853d0e5648eb433} 
+\index{TransformComponent@{TransformComponent}!Update@{Update}}
+\index{Update@{Update}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Transform\+Component\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The Update Portion of the Game Loop. Updates the Position of the Game Entity each call. 
+
+Reimplemented from \mbox{\hyperlink{struct_component_aaf2ce6dc5752072492f790ad4c7955bb}{Component}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_transform_component_a7c2d8fa95cdfabc1c08fe6c97bf40523}\label{struct_transform_component_a7c2d8fa95cdfabc1c08fe6c97bf40523} 
+\index{TransformComponent@{TransformComponent}!isCursor@{isCursor}}
+\index{isCursor@{isCursor}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{isCursor}{isCursor}}
+{\footnotesize\ttfamily bool Transform\+Component\+::is\+Cursor = false}
+
+
+
+Whether or not this Transform is the Box Cursor or not. ~\newline
+ 
+
+\Hypertarget{struct_transform_component_a8631866a05e24bcf99b80e5a8b6e3eaa}\label{struct_transform_component_a8631866a05e24bcf99b80e5a8b6e3eaa} 
+\index{TransformComponent@{TransformComponent}!mRectangle@{mRectangle}}
+\index{mRectangle@{mRectangle}!TransformComponent@{TransformComponent}}
+\doxysubsubsection{\texorpdfstring{mRectangle}{mRectangle}}
+{\footnotesize\ttfamily SDL\+\_\+\+FRect Transform\+Component\+::m\+Rectangle \{20.\+0f,20.\+0f,32.\+0f,32.\+0f\}}
+
+
+
+The Rectangle of this Transform. Has postion and scale. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_transform_component_8hpp}{Transform\+Component.\+hpp}}\end{DoxyCompactItemize}

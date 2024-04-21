@@ -1,0 +1,55 @@
+\doxysection{Transform\+Component.\+hpp}
+\hypertarget{_transform_component_8hpp_source}{}\label{_transform_component_8hpp_source}\index{include/TransformComponent.hpp@{include/TransformComponent.hpp}}
+\mbox{\hyperlink{_transform_component_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ TransformComponent.hpp}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <SDL3/SDL.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8hpp}{Component.hpp}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_transform_component}{TransformComponent}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{struct_component}{Component}}\ \{}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{struct_transform_component_ace1cf2d7d2a7468e9cb3eb0ce382f446}{TransformComponent}}();}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{struct_transform_component_a37d5d34a3695eafc8b8cbf37905e756f}{\string~TransformComponent}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_transform_component_a6907dcd19f86f1faa4af54cceadc4391}{Input}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_transform_component_a4532abc14d19b4d80853d0e5648eb433}{Update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_transform_component_a78eedf13d70917145f2cb613509c14c1}{Render}}(SDL\_Renderer*\ renderer)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{_component_type_8hpp_a179460a59015cda603e42e8a71d6e043}{ComponentType}}\ \mbox{\hyperlink{struct_transform_component_a4d30c255d54af02fc53774412b488014}{GetType}}()\ \textcolor{keyword}{override};\ \ \ }
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_transform_component_ad0ec4d225535f56ab1a0aa942d7f006b}{SetW}}(\textcolor{keywordtype}{float}\ w);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_transform_component_a18d77f1e7dd0eae8f011f538560a91f0}{SetH}}(\textcolor{keywordtype}{float}\ h);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_transform_component_a198f76af633557e85027771f60867432}{SetWH}}(\textcolor{keywordtype}{float}\ w,\ \textcolor{keywordtype}{float}\ h);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_transform_component_a8052d38b75f03094e781481212878589}{SetX}}(\textcolor{keywordtype}{float}\ x);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_transform_component_ab7df147cf1e48361aec3f96573278a09}{SetY}}(\textcolor{keywordtype}{float}\ y);}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_transform_component_a1977fcd1d8cd835aea71651f18cc9ea4}{SetXY}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y);}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_transform_component_a7260ce3bc9ef172d4a57a482c2b209ad}{GetX}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_transform_component_ae02c8d6e718fdcc01065b228bbcdb10d}{GetY}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_transform_component_ae5501067c1a954f5ed3b0cf75aadff20}{GetW}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{struct_transform_component_aec4ba1c40d8071ff463a2a697c2984d6}{GetH}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00113\ \ \ \ \ SDL\_FRect\ \mbox{\hyperlink{struct_transform_component_a992e0cbffe237badd34641f1e82cb1b2}{GetRectangle}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ SDL\_FRect\ \mbox{\hyperlink{struct_transform_component_a8631866a05e24bcf99b80e5a8b6e3eaa}{mRectangle}}\{20.0f,20.0f,32.0f,32.0f\};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_transform_component_a7c2d8fa95cdfabc1c08fe6c97bf40523}{isCursor}}\ =\ \textcolor{keyword}{false};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00118\ \};}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ }
+
+\end{DoxyCode}
